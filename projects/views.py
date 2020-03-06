@@ -12,6 +12,7 @@ def project_index(request):
 
 # detail view will show more information on a particular topic 
 def project_detail(request, pk):
+    # query to retrieve project with primary key, pk, equal to function argument
     project = Project.objects.get(pk=pk)
     context = {
         'project': project
