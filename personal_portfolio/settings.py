@@ -25,8 +25,8 @@ SECRET_KEY = "!^_6%0so9$a@u-w22nc56xcp0^spoo4k^3q!j016o5hll+#c#o"
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [‘0.0.0.0’, ‘localhost’, 'https://blooming-forest-71756.herokuapp.com/']
-
+# ALLOWED_HOSTS = [‘0.0.0.0’, ‘localhost’, 'https://blooming-forest-71756.herokuapp.com/']
+ALLOWED_HOSTS = [] 
 
 # Application definition
 
@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "projects",
+    "blog",
 ]
 
 MIDDLEWARE = [
@@ -124,4 +125,4 @@ USE_TZ = True
 
 STATIC_URL = "/static/"
 
-STATIC_ROOT = os.path.join(BASE_DIR, ‘staticfiles’)
+# STATIC_ROOT = os.path.join(BASE_DIR, ‘staticfiles’)
